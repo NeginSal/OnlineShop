@@ -3,8 +3,6 @@
     <div class="row py-3">
       <div class="col" id="main">
         <Cards @update-cart="updateCart($event)" />
-        <p>{{cart}}</p>
-        <p>{{cartTotal}}</p>
         <!-- <div class="row row-cols-3 mt-5">
           <div v-for="product in products" :key="product.id" class="card col">
             <div class="card-body">
@@ -67,8 +65,4 @@ export default {
   background-color: #66ff99;
 }
 
-/* #main{
-  border-right:3px solid #cc2900;
-
-} */
 </style>
