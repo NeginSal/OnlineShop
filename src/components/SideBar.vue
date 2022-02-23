@@ -7,7 +7,8 @@
         <h6>Total Price</h6>
         <p>${{ cartTotal }}</p>
       </div>
-      <router-link to="/report">createReport</router-link>
+      <!-- <router-link to="/report"  tag="button">createReport</router-link> -->
+      <button type="button" class="btn" @click="$router.push('/report')">CreateReport</button>
     </div>
   </div>
 </template>
@@ -29,5 +30,9 @@ export default {
   background-color: #cce6ff;
   border-radius: 30px;
   color: #003333;
+}
+.btn {
+  background-color: #3399ff;
+  border-radius: 10px;
 }
 </style>
