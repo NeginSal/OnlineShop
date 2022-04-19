@@ -7,8 +7,7 @@
         <h6>Total Price</h6>
         <p>${{ cartTotal }}</p>
       </div>
-      <!-- <router-link to="/report"  tag="button">createReport</router-link> -->
-      <button type="button" class="btn" @click="$router.push('/report')">CreateReport</button>
+      <button type="button" class="btn" @click="handleClick()">CreateReport</button>
     </div>
   </div>
 </template>
@@ -16,6 +15,11 @@
 <script>
 export default {
   props: ["cart", "cartTotal"],
+  methods:{
+    handleClick (){
+      this.$router.push('/report');
+    }
+  }
 };
 </script>
 

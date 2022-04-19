@@ -12,15 +12,10 @@
             <button @click="addToCart(product)" type="button" class="btn">
               Add To Card
             </button>
-            <!-- <button @click="sendData" type="button" class="btn">
-              Add To Card
-            </button> -->
           </div>
         </div>
       </div>
     </div>
-    <p>{{ cartTotal }}</p>
-    <p>{{ cart }}</p>
   </div>
 </template>
 
@@ -31,34 +26,7 @@ export default {
       return this.$store.state.products;
     },
   },
-  methods: {
-    addToCart(product) {
-       this.$emit('update-cart', product)
-    },
-  },
 
-  // data() {
-  //   return {
-  //     displayCart: false,
-  //     cart: [],
-  //   };
-  // },
-  // computed: {
-  //   products() {
-  //     return this.$store.state.products;
-  //   },
-  //   cartTotal() {
-  //     return this.cart.reduce((inc, product) => Number(product.price) + inc, 0);
-  //   },
-  // },
-  // methods: {
-  //   addToCart(product) {
-  //     this.cart.push(product);
-  //   },
-  //   sendData(){
-  //     this.$emit('name',this.cart,this.cartTotal,this.addToCart)
-  //   }
-  // },
 };
 </script>
 
